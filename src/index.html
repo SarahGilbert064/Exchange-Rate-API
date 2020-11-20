@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Exchanger</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="jumbotron">Currency Exchanger!</h1>
+    <h2>Input your amount in USD and find our your total in 5 different currencies from around the world!</h2>
+    <div class="exchange-rate">
+      <form id="exchange-rate">
+        <label for="exchange-rate">Pick your currency:</label>
+        <select id="currency">
+          <option value="euro">European Euro</option>
+          <option value="pound">Great British Pound</option>
+          <option value="baht">Thai Baht</option>
+          <option value="rand">South African Rand</option>
+          <option value="yen">Japanese Yen</option>
+        </select>
+      </form>
+      <form id="dollar-amount">
+        <label for="dollar-amount">Amount in USD:</label>
+        <input type="number" id="dollar-amount" name="dollar-amount">
+      </form>
+      <form id="button">
+        <button type="submit" class="btn-success" id="final-amount">Exchange my money!</button>
+      </form>
+      <div id="currency-output">
+      </div>
+    </div>
+  </div>
+</body>
+</html>

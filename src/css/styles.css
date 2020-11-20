@@ -1,0 +1,20 @@
+body {
+  background-image: url(https://previews.123rf.com/images/catarena/catarena1601/catarena160100013/51067507-a-collection-of-various-foreign-currencies-from-countries-spanning-the-globe-many-different-currenci.jpg);
+}
+
+.jumbotron {
+  background-color: lightgreen;
+  text-align: center;
+  font-weight: bolder;
+  font-family: 'Big Shoulders Inline Text', cursive;
+  border: 12px black;
+  padding: 34px;
+  box-sizing: border-box;
+  border-style: groove;
+}
+
+h2 {
+  text-align: center;
+  color: darkgray;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
