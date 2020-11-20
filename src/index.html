@@ -9,10 +9,12 @@
   <div class="container">
     <h1 class="jumbotron">Currency Exchanger!</h1>
     <h2>Input your amount in USD and find our your total in 5 different currencies from around the world!</h2>
-    <label for="amount">Enter Amount</label>
-    <input id="amount" type="number">
-    <button class="btn-success" id="final-amount">Find Rate:</button>
-
+    <form id="exchange-rates">
+      <label for="amount">Enter Amount</label>
+      <input id="amount" type="number">
+      <button class="btn-success" id="final-amount">Find Rate</button>
+      <ul id="rates"></ul>
+    </form>
   </div>
 </body>
 </html>
