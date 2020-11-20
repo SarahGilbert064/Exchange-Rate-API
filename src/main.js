@@ -8,8 +8,8 @@ import Exchange from './services/exchangeService.js';
 function displayRate(response) {
   for(let property in response.coversion_rates) {
   if (response.conversion_rates) {  
-    $('#show-rates').append(`${response.coversion_rates[property]}`);
-    // $('#show-rates').text(`Your amount in USD is ${response.conversion_rates}`);
+    // $('#show-rates').append(`${response.coversion_rates[property]}`);
+    $('.show-rates').text(`Your amount in USD is ${response.conversion_rates[property]}`);
     }
   }
 }
