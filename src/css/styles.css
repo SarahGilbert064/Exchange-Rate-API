@@ -1,5 +1,5 @@
 body {
-  background-image: url(https://previews.123rf.com/images/catarena/catarena1601/catarena160100013/51067507-a-collection-of-various-foreign-currencies-from-countries-spanning-the-globe-many-different-currenci.jpg);
+  background-image: url(https://wallpapercave.com/wp/wp2300383.jpg);
 }
 
 .jumbotron {
@@ -15,6 +15,27 @@ body {
 
 h2 {
   text-align: center;
-  color: darkgray;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: black;
+}
+
+#exchange-rate {
+  font-family: 'Big Shoulders Inline Text', cursive;
+  font-weight: bolder;
+  color: black;
+  font-size: 20px;
+  text-align: center;
+}
+
+#dollar-amount {
+  font-family: 'Big Shoulders Inline Text', cursive;
+  font-weight: bolder;
+  font-size: 20px;
+  text-align: center;
+}
+
+.btn-success {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  color: black;
 }
