@@ -12,7 +12,6 @@
   },
   "rules": {
       "semi": 1,
-      "indent": ["warn", 1],
-      "no-unused-vars": ["warn", 1]
+      "indent": ["warn", 2]
   }
 }
