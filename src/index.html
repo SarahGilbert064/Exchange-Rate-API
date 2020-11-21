@@ -10,8 +10,8 @@
     <h1 class="jumbotron">Currency Exchanger!</h1>
     <form id="user-input">
     <h2>Input your amount in USD and find our your total in 5 different currencies from around the world!</h2>
-      <label for="currency">Pick your currency:</label>
-      <select id="currency">
+      <label for="currency-type">Pick your currency:</label>
+      <select id="currency-type">
         <option value="euro">European Euro</option>
         <option value="pound">Great British Pound</option>
         <option value="baht">Thai Baht</option>
@@ -28,11 +28,12 @@
       <button type="submit" class="btn-success" id="final-amount">Exchange my money!</button>
     </form>
     <div class="show-rates">
-      <div class="EUR-rate">$</div>
-      <div class="GBP-rate">$</div>
-      <div class="THB-rate">$</div>
-      <div class="ZAR-rate">$</div>
-      <div class="JPY-rate">$</div>
+      <div class="EUR-rate"></div>
+      <div class="GBP-rate"></div>
+      <div class="THB-rate"></div>
+      <div class="ZAR-rate"></div>
+      <div class="JPY-rate"></div>
+      <div class="showErrors"></div>
     </div>
   </div>
 </body>
