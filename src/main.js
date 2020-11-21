@@ -6,17 +6,17 @@ import ExchangeService from './services/exchangeService.js';
 
 function clearFields() {
   $("#dollar-amount").val("");
-  $(".EUR-rate").val("");
-  $(".GBP-rate").val("");
-  $(".THB-rate").val("");
-  $(".ZAR-rate").val("");
-  $(".JPY-rate").val("");
+  // $(".EUR-rate").val("");
+  // $(".GBP-rate").val("");
+  // $(".THB-rate").val("");
+  // $(".ZAR-rate").val("");
+  // $(".JPY-rate").val("");
 }
 
 
 function displayRate(response) {
   if (response.conversion_rates) {  
-    $(".EUR-rate").text(`${(USD * dollarAmount).toFixed(2)} in USD`);
+    $(".EUR-rate").text(`${response.coversion_rates}`);
   }
 }
 
@@ -28,7 +28,7 @@ async function makeApiCall(currencyType) {
 
 $(document).ready(function() {
   $('#final-amount').click(function(event) {
-    let dollarAmount = parseInt($('#dollar-amount').val());
+    // let dollarAmount = parseInt($('#dollar-amount').val());
     let currencyType = $("#currency-type").val();
     clearFields();
     makeApiCall(currencyType);
