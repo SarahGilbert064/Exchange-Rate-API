@@ -20,24 +20,20 @@ function displayRate(response) {
   }
 }
 
-async function makeApiCall(currencyType) {
-  const response = await ExchangeService.getExchange(currencyType);
-  displayRate(response);
-}
-
 
 $(document).ready(function() {
   $('#final-amount').click(function(event) {
     // let dollarAmount = parseInt($('#dollar-amount').val());
     let currencyType = $("#currency-type").val();
     clearFields();
-    makeApiCall(currencyType);
     
-    ExchangeService.getExchange()
-      .then(function(response) {
-        displayRate(response);
-        console.log(response);
-      });
+    let promise = ExchangeService.getExchange();
+    promise.then(function(response) {
+      const data = JSON.parse(response);
+
+      displayRate(response);
+      console.log(response);
+    });
     event.preventDefault();
   });
 });
