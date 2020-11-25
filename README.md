@@ -4,13 +4,8 @@
 
 ## Description
 
-##### This webpage is a currency exchange application that was created to further my knowledge and skills with the use of API's. I built the application with the use of an API that I pulled from www.exchangerate-api.com, where after signing up, I was given access to my own personal API key. If working correctly, the application should allow the user to covert U.S. currency into 5 other types of currencies, which are the European Euro, the Great British Pound, the Thai Baht, the South African Rand, and Japanese Yen. If the API call does not go through, the user should recieve a notification that states what the error is.
+##### This webpage is a currency exchange application that was created to further my knowledge and skills with the use of API's. I built the application with the use of an API that I pulled from www.exchangerate-api.com, where after signing up, I was given access to my own personal API key. If working correctly, the application should allow the user to covert U.S. currency into 5 other types of currencies, which are the European Euro, the Great British Pound, the Thai Baht, the South African Rand, and Japanese Yen. If the API call does not go through, the user should recieve a notification that states why the call is not going through.
 
-
-## Specifications
-
-  | Test | Input | Output |
-  | :-------------------- | :------------------------------------- | :-------------------------- |
 
 ## Setup Instruction
 
@@ -29,7 +24,9 @@
 
 6. Once the required webpack has been installed, run 'npm run build' to bundle all files.
 
-7. Visit https://www.exchangerate-api.com/ to obtain API key, then paste API key into the .env file.
+7. Visit https://www.exchangerate-api.com/ to obtain API key.
+
+8. Create a new .env file in your directory and type out API_KEY= and paste your API key into the file after the equal sign.
 
 8. You can then view the website displaying the application by running 'npm run start' in the project's terminal using VSCode or another text editor.
 
@@ -42,11 +39,13 @@
 ## Technologies Used
 * HTML
 * CSS
+* Bootstrap
 * JavaScript
 * JQuery
 * Visual Studio Code
-* Jest
 * esLint
+* Postman
+* API key from https://www.exchangerate-api.com/
 
 
 ## Legal
