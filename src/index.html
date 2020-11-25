@@ -7,14 +7,15 @@
 </head>
 <body>
   <div class="container">
-    <h1 class="jumbotron">Currency Exchanger!</h1>
+    <div class="jumbotron">
+    <h1>Covert It Currency</h1>
+    <h3>Our currency converter provides the most up-to-date rates from these 5 countries.</h3> 
+    <h3>Pull out your cash and see where in the world our app can take you!</h3>
+    </div>
     <div style="margin: 5% auto 0px; width: 80%; text-align: center;">
-      <h2>Input your amount in USD and find our your total in 5 different currencies from around the world!</h2> 
-      <br>
-      <h3>Our currency converter provides the most up-to-date rates from these 5 countries:</h3>
-      <br>
       <form id="user-input">
         <input type="number" id="numInput" placeholder="Enter amount in USD...">
+        <br>
         <br>
         <input type="radio" id="eur" name="currencyType" value="eur">
         <label for="eur">European Euro</label>
@@ -27,6 +28,7 @@
         <input type="radio" id="jpy" name="currencyType" value="jpy">
         <label for="jpy">Japanese Yen</label>
         <button type="submit" id="finalAmount" class="btn btn-success">Covert Currency</button>
+        <br>
         <div id="showResult"></div>
         <div id="showError"></div>
       </form>

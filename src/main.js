@@ -17,7 +17,7 @@ function convert(response, dollarAmount, currencyType) {
   } else if (currencyType === "jpy") {
     $("#showResult").text("Your amount of USD in Japanese Yen is : ¥" + (`${response.conversion_rates.JPY}` * dollarAmount).toFixed(2));
   } else if (currencyType !== "eur" || "gbp" || "thb" || "zar" || "jpy") {
-    $("#showResult").text("This currency does not exist for conversion");
+    $("#showResult").text("Please specify a currency");
   } else {
     $("#showError").text(`There was an error: ${response.message}`);
   }
