@@ -16,17 +16,26 @@
 h2 {
   text-align: center;
   color: black;
+  font-size: 22px;
 }
 
-#exchange-rate {
+h3 {
+  text-align: center;
+  color: black;
+  font-size: 18px
+}
+
+#numInput {
   font-family: 'Big Shoulders Inline Text', cursive;
   font-weight: bolder;
   color: black;
   font-size: 20px;
   text-align: center;
+  margin: auto;
+  display: inline block;
 }
 
-#dollar-amount {
+#eur , #gbp , #thb , #zar , #jpy {
   font-family: 'Big Shoulders Inline Text', cursive;
   font-weight: bolder;
   font-size: 20px;
